@@ -1,6 +1,6 @@
 {
   "name": "multi-stdout",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Pipe out multiple streams to stdout in parallel without messing up the output",
   "main": "index.js",
   "dependencies": {
