@@ -43,17 +43,14 @@ var line = function(data) {
 module.exports = function() {
   var ln
 
-  var write = function(data) {
-    if (!ln) ln = line()
-    if (ln.buffer) data = Buffer.concat([ln.buffer, data])
-    ln(data)
-  }
-
   return through(function(data, enc, cb) {
     var lines = split(data)
 
     for (var i = 0; i < lines.length; i++) {
-      write(lines[i])
+      var data = lines[i]
+      if (!ln) ln = line()
+      if (ln.buffer) data = Buffer.concat([ln.buffer, data])
+      ln(data)
       if (i < lines.length-1) ln = null
     }
 
