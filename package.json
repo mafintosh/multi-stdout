@@ -1,0 +1,21 @@
+{
+  "name": "multi-stdout",
+  "version": "0.0.0",
+  "description": "Pipe out multiple streams to stdout in parallel without messing up the output",
+  "main": "index.js",
+  "dependencies": {
+    "cyclist": "^0.2.2",
+    "through2": "^0.6.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/multi-stdout.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/multi-stdout/issues"
+  },
+  "homepage": "https://github.com/mafintosh/multi-stdout"
+}
